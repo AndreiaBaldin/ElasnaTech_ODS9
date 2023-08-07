@@ -1,0 +1,234 @@
+/* COMENTARIOS NO CSS*/
+
+html{
+height: 100%;
+margin:auto;
+/*permite centralizar conteúdo na vertical da tela*/
+}
+
+header{
+    position: fixed;
+    background-size: cover;
+    width: 80%;
+    top: 0%;
+}
+
+body{
+    background-color: #0c0b0b;
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 960px;
+    height: 90%; /*permite centralizar conteúdo na vertical da tela*/
+}
+
+/* ***************CONFIGURAÇÕES DO CABEÇALHO e MENU SUPERIOR*************** */
+.cabecalho{
+    /* Configurações para imagem de fundo do cabeçalho */
+    background-image: url(./Images/pexels-pixabay-414579.jpg);
+    height: 90px;
+    background-size: cover;
+    background-position: right center;
+    padding-top: 1px;
+    padding-bottom: 0%;
+}
+
+/* Classe logo1_HTML e ajuste à ESQUERDA do cabeçalho + MENU*/
+#logo{
+    width: 50px;
+    height: 70px;
+    float: left;
+    border-radius: 50%;
+    margin-left: 50px;
+}
+
+.cabecalho nav ul{
+    /* Configurações do MENU via tag NAV na estrutura (ul) que está no cabeçalho */
+    margin: 20px 50px 0 0;
+    text-align: right;
+    margin left: 16px;
+}
+
+.cabecalho nav li{
+    /* Configurações do MENU via tag NAV na(s) linha(s)(li) que está(ão) no cabeçalho */
+    display:inline-block;
+    list-style-type: none; /*comando para retirar os bullets das opções */
+    border: 1px solid whitesmoke;
+}
+
+.cabecalho nav a{
+     /* Configurações do MENU para formatação da tag A no cabeçalho */
+     background-color: rgba(0, 0, 0, .5);
+     padding: 8px;
+     display: block;
+     color: whitesmoke;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-size: 12px;
+     gap: 16px;
+     letter-spacing: 2px;
+     border-radius: 30px;
+}
+
+.cabecalho nav a:hover{
+    /* Configuração de link/MENU para mudar de cor ao clicar em um link de página ou de arquivo*/
+    background-color: rgba(0, 0, 0, .8);
+    text-decoration: underline;
+}
+
+/* Configuração (CLASSE) da primeira sessão INICIO com tamanho e customização especifica como TITULO*/
+.inicio{
+    margin-top: 30%;
+    margin: 15px auto 0 auto;
+    width: 90%;
+    text-align: center;
+    padding: 10px;
+    background-color: #a9aaa5;
+    color: rgb(94, 63, 30);
+    text-shadow: 2px 2px 2px rgb(3, 3, 3);
+}
+
+.inicio h1{
+    font-size: 30px;
+    text-shadow: 2px 2px 2px rgb(189, 183, 183);
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+
+
+/* Configuração (ID) da primeira sessão INICIO com tamanho e customização especifica como TITULO*/
+#inicio{
+    font-size: 30px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+/* ***************CONFIGURAÇÕES DO CONTEÚDO PRINCIPAL DA PAGINA*************** */
+
+main{
+    margin: auto;
+    margin-top: 20px;
+    width: 90%;
+    height:70%;
+    max-width: 860px;
+}
+
+
+article{
+    background-color: whitesmoke;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+
+/* Formatação interna do texto da TAG Semântica ARTICLE */
+article h2{
+    border-bottom: 2px solid #ccc;
+    background-color: #e3dbdb;
+    padding: 10px;
+    margin-top:0;
+    color: rgb(94, 63, 30);
+    text-shadow: 1px 1px 1px rgb(3, 3, 3);
+}
+
+
+/* Criação de DIVs para habilitar recursos de Flex-box/position */
+.flex_container_beneficios{
+    display: flex;
+    height:fit-content;
+    font-size: 15px;
+    align-items:center;
+}
+
+.flex_container_beneficios img{
+    border-radius: 60%;
+    padding: 1em;
+}
+
+
+/* Propriedades para estilizar/configurar o formato/visualização da  tabela - borda, linha, etc */
+table{
+    width: 80%;
+    margin: auto;
+    font-size: 14px;
+    background-color: rgb(240, 190, 136);
+}
+
+/* Propriedades para estilizar/configurar o formato/visualização da LINHA da TABELA */
+th{
+    border: 2px solid black;
+    text-align: center;
+    padding: 9px; 
+    background-color: rgb(194, 160, 25);
+}
+
+/* Propriedades para estilizar/configurar o formato/visualização da COLUNA da TABELA */
+td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 6px;  
+}
+
+/* Propriedades para estilizar/configurar o formato/visualização do FORMULÁRIO e dos campos de preenchimento */
+
+form{
+    width: 500px;
+    margin: 0 auto;
+    background-color: #f0efec;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #333;
+}
+
+fieldset{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+input,
+label{
+    display:block;
+    width: 100%;
+    box-sizing: border-box;
+    color: rgb(94, 63, 30);
+}
+
+label{
+    margin-bottom: .25em;
+}
+
+input{
+    padding: .75em;
+    border-radius: 5px;
+    margin-bottom: 1.5em;
+    border: 1px solid #bbb;
+    font-size: 1em;
+}
+
+legend{
+    padding: 1em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: rgb(94, 63, 30);
+}
+
+#sobremim img{
+    display: inline-flex;
+    width: 80px;
+    float: right;
+    border-radius: 50%; /*comando que faz com que a borda da imagem fique arrendondada - 50% */
+}
+
+#sobremim p{
+    display: inline-flexbox;
+    height:auto;
+    font-size: 15px;
+}
+
+#referencias a{
+    display: inline-flex;
+    justify-content: center;
+    gap: 16px;
+}
